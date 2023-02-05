@@ -1,7 +1,7 @@
 const assert = require("assert");
-const Gest = require("../Gest");
+const Gest = require("../src/Gest");
 const FootballTeam = require("../src/entities/FootballTeam.entity");
-const Logger = require("../Logger");
+const Logger = require("../src/Logger");
 
 function runTests() {
   Gest.it("should create a team with the given name", () => {

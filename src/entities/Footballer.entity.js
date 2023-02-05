@@ -1,5 +1,5 @@
 const Utils = require("../utils/Utils");
-const Logger = require("../../Logger");
+const Logger = require("../Logger");
 
 class Footballer {
   constructor(name, age, position) {

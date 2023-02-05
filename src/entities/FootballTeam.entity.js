@@ -1,4 +1,4 @@
-const Logger = require("../../Logger");
+const Logger = require("../Logger");
 const Footballer = require("./Footballer.entity");
 
 class FootballTeam {
