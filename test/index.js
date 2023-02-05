@@ -27,6 +27,13 @@ function runTests() {
     footballer.setName("newName");
     assert.strictEqual(footballer.name, "newName");
   });
+
+  it("should update player's age", () => {
+    const footballer = new Footballer("name", 20);
+    assert.strictEqual(footballer.age, 20);
+    footballer.setAge(21);
+    assert.strictEqual(footballer.age, 21);
+  });
 }
 
 function main() {
