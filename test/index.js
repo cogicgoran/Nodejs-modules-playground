@@ -20,7 +20,9 @@ function runTests() {
     assert.strictEqual(createdTeam.players.length, FootballTeam.MIN_PLAYERS);
   });
 
-  it("should update player's name");
+  it("should update player's name",() => {
+    
+  });
 }
 
 function main() {
