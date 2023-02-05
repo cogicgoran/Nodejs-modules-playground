@@ -2,6 +2,7 @@ const assert = require("assert");
 const { it } = require("../src/Gest");
 const FootballTeam = require("../src/entities/FootballTeam.entity");
 const Logger = require("../src/Logger");
+const Footballer = require("../src/entities/Footballer.entity");
 
 function runTests() {
   it("should create a team with the given name", () => {
@@ -20,8 +21,11 @@ function runTests() {
     assert.strictEqual(createdTeam.players.length, FootballTeam.MIN_PLAYERS);
   });
 
-  it("should update player's name",() => {
-    
+  it("should update player's name", () => {
+    const footballer = new Footballer("noName");
+    assert.strictEqual(footballer.name, "noName");
+    footballer.setName("newName");
+    assert.strictEqual(footballer.name, "newName");
   });
 }
 

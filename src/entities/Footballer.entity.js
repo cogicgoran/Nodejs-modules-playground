@@ -8,15 +8,15 @@ class Footballer {
     this.position = position;
   }
 
-  set setPosition(position) {
+  setPosition(position) {
     this.position = position;
   }
 
-  set setAge(age) {
+  setAge(age) {
     this.age = age;
   }
 
-  set setName(name) {
+  setName(name) {
     this.name = name;
   }
 
